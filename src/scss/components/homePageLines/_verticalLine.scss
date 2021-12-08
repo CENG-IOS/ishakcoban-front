@@ -1,0 +1,18 @@
+.verticalLine {
+  background-color: $black;
+  animation-name: verticalLine;
+  
+}
+
+.verticalDot {
+  background-color: $black;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.rotateVerticalLine{
+    transform: rotate(180deg);
+    z-index: 3;
+   margin-bottom:-3%;
+}

@@ -1,0 +1,22 @@
+/**abstracts**/
+@import "../abstracts/_colors";
+@import "../abstracts/_typography";
+
+/**components**/
+    /**homePageLines**/
+    @import "../components/homePageLines/_leftAndRightLines";
+    @import "../components/homePageLines/logo";
+    @import "../components/homePageLines/verticalLine";
+    @import "../components/homePageLines/verticalLineAnimation";
+    /**buttons**/
+    @import "../components/buttons/viewButton";
+
+@import "../components/footer";
+
+
+
+/**pages**/
+@import "../pages/_home";
+
+
+/**themes**/

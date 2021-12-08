@@ -1,0 +1,42 @@
+.logoWrapper {
+  background-color: $white;
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2), 0 4px 4px 0 #00000030;
+  width: 23vh;
+  height: 23vh;
+  border-radius: 100%;
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+  width: 0vh;
+  height: 0vh;
+  opacity: 0;
+  z-index:0;
+  
+}
+
+.nameWrapper {
+  font-family: btr;
+  font-weight: bold;
+  letter-spacing: 6px;
+  font-size: 2rem;
+  
+}
+
+@keyframes logo {
+  from {
+    width: 0vh;
+    height: 0vh;
+    opacity: 0;
+  }
+  to {
+    width: 23vh;
+    height: 23vh;
+    opacity: 1;
+  }
+}
+
+.staticCol {
+  width: 23vh;
+  height: 23vh;
+}
