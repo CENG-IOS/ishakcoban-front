@@ -1,8 +1,8 @@
 import React from "react";
-import instagram from "../images/instagram.png"
-import devianart from "../images/devianart.png"
-import tiktok from "../images/tiktok.png"
-import linkedin from "../images/linkedin.png"
+import instagram from "../images/instagram.png";
+import devianart from "../images/devianart.png";
+import tiktok from "../images/tiktok.png";
+import linkedin from "../images/linkedin.png";
 export const Footer = () => {
   return (
     <div className="container-fluid bggradient">
@@ -18,17 +18,27 @@ export const Footer = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </div>
-        <div className="col-2 col-md-2 col-lg-2 col-xl-2 d-flex flex-column justify-content-center bg-danger">
-          <div className='d-flex justify-content-center align-items-center bg-success w-25 align-self-center'>
-            <div ><img className='w-100' src={instagram}></img></div>
-            <div ><img className='w-100' src={linkedin}></img></div>
+        <div className="col-2 col-md-2 col-lg-2 col-xl-2 d-flex flex-column justify-content-center">
+          <div className="d-flex justify-content-center align-items-center w-50 align-self-center">
+            <div className="d-flex justify-content-center align-items-center me-4">
+            <a href="https://www.instagram.com/ishakcbn/?hl=tr" target="_blank"><img className="imageSize" src={instagram}></img></a>
+            </div>
+            <div className="d-flex justify-content-center align-items-center">
+            <a href="https://www.linkedin.com/in/ishak-%C3%A7oban-b8b027227/" target="_blank"><img className="imageSize" src={linkedin}></img></a>
+            </div>
           </div>
 
-          <div className='d-flex justify-content-center align-items-center bg-success w-25 align-self-center'>
-          <div><img img className='w-100' src={devianart}></img></div>
-          <div><img img className='w-100' src={tiktok}></img></div>
-        </div>
-          <div className='d-flex justify-content-center align-items-center'>ILETISIM</div>
+          <div className="d-flex justify-content-center align-items-center align-self-center mt-4">
+            <div className="d-flex justify-content-center align-items-center me-4">
+            <a href="https://www.deviantart.com/ishakcbn" target="_blank"><img img className="imageSize" src={devianart}></img></a>
+            </div>
+            <div className="d-flex justify-content-center align-items-center">
+            <a href="https://www.tiktok.com/@ishakcbn?lang=en" target="_blank"><img img className="imageSize" src={tiktok}></img></a>
+            </div>
+          </div>
+          <div className="d-flex justify-content-center align-items-center mt-2 fw-bold">
+            İLETİŞİM
+          </div>
         </div>
       </div>
     </div>

@@ -323,6 +323,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.imageSize {
+  width: 30px;
+}
+
 /**pages**/
 .small-screen {
   display: none;
