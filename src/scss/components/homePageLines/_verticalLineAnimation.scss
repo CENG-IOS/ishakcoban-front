@@ -1,36 +1,33 @@
 .verticalLineAnimation {
-    animation-name: verticalLine;
-    animation-duration: 1s;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
+  animation-name: verticalLine;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.verticalDotAnimation {
+  animation-name: verticalDot;
+  animation-duration: 1s;
+  animation-delay: .9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes verticalLine {
+  from {
+    width: 1.34px;
+    height: 0px;
   }
-  
-  .verticalDotAnimation {
-    animation-name: verticalDot;
-    animation-duration: 1s;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
+  to {
+    width: 1.34px;
+    height: 270px;
   }
-  
-  @keyframes verticalLine {
-    from {
-      
-      width: 1.34px;
-      height: 0px;
-    }
-    to {
-      
-      width: 1.34px;
-      height: 270px;
-    }
+}
+
+@keyframes verticalDot {
+  from {
+    margin-top: 0px;
   }
-  
-  @keyframes verticalDot {
-      from {
-        margin-top:0px
-      }
-      to {
-          margin-top:270px
-      }
-    }
-  
+  to {
+    margin-top: 270px;
+  }
+}

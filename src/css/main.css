@@ -8,8 +8,8 @@
           animation-name: leftLine;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: 2;
@@ -25,8 +25,8 @@
           animation-name: leftDot;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -82,19 +82,15 @@
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2), 0 4px 4px 0 #00000030;
           box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2), 0 4px 4px 0 #00000030;
-  width: 23vh;
-  height: 23vh;
   border-radius: 100%;
   -webkit-animation-name: logo;
           animation-name: logo;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  width: 0vh;
-  height: 0vh;
   opacity: 0;
   z-index: 0;
 }
@@ -108,26 +104,26 @@
 
 @-webkit-keyframes logo {
   from {
-    width: 0vh;
-    height: 0vh;
+    width: 0px;
+    height: 0px;
     opacity: 0;
   }
   to {
-    width: 23vh;
-    height: 23vh;
+    width: 130px;
+    height: 130px;
     opacity: 1;
   }
 }
 
 @keyframes logo {
   from {
-    width: 0vh;
-    height: 0vh;
+    width: 0px;
+    height: 0px;
     opacity: 0;
   }
   to {
-    width: 23vh;
-    height: 23vh;
+    width: 130px;
+    height: 130px;
     opacity: 1;
   }
 }
@@ -162,8 +158,8 @@
           animation-name: verticalLine;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -173,8 +169,8 @@
           animation-name: verticalDot;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -228,9 +224,13 @@
           animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   opacity: 0;
+}
+
+.bgTransParent {
+  background-color: transparent;
 }
 
 @-webkit-keyframes initalView {
@@ -266,11 +266,11 @@
 }
 
 .viewButton:hover {
-  opacity: .8;
+  opacity: 0.8;
   -webkit-filter: blur(0.6px);
           filter: blur(0.6px);
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .titleWrapper {
@@ -286,8 +286,8 @@
           animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   opacity: 0;
 }
 
@@ -327,6 +327,34 @@
   width: 30px;
 }
 
+.smallScreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .smallScreen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fontSize {
+    font-size: 0.8em;
+    padding-bottom: 5%;
+  }
+}
+
 /**pages**/
 .small-screen {
   display: none;
@@ -344,6 +372,11 @@
     padding-bottom: 0.1px;
     width: 50%;
   }
+}
+
+.staticSize {
+  height: 400px;
+  padding-top: 145px;
 }
 
 /**themes**/
