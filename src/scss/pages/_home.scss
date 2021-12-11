@@ -1,17 +1,20 @@
-.small-screen{
-    display: none;
+.small-screen {
+  display: none;
 }
-
 @media screen and (max-width: 638px) {
-    .small-screen{
-        display: block;
-    }
-    .second-section-wrapper{
-        display: none;
-    }
-    .smoothLine{
-        opacity: 1;
-       padding-bottom: 0.1px;
-       width: 50%;
-    }
+  .small-screen {
+    display: block;
   }
+  .second-section-wrapper {
+    display: none;
+  }
+  .smoothLine {
+    opacity: 1;
+    padding-bottom: 0.1px;
+    width: 50%;
+  }
+}
+.staticSize {
+  height: 400px;
+  padding-top: 145px;
+}
