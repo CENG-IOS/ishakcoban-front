@@ -1,0 +1,24 @@
+.main-logo {
+    font-family: $Kaushan;
+    font-size: 2rem;
+}
+
+.navbar-collapse {
+    div {
+        font-family: $Roboto;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.navbar-nav {
+    a {
+        &:hover {
+            color: $brown !important;
+        }
+        color: $black !important;
+    }
+}

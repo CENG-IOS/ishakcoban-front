@@ -323,6 +323,28 @@
   font-family: "Roboto", sans-serif;
 }
 
+.main-logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+}
+
+.navbar-collapse div {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navbar-nav a {
+  color: #000000 !important;
+}
+
+.navbar-nav a:hover {
+  color: #7C3030 !important;
+}
+
 /**pages**/
 .small-screen {
   display: none;
@@ -343,3 +365,4 @@
 }
 
 /**themes**/
+/*# sourceMappingURL=main.css.map */
