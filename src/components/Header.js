@@ -12,7 +12,7 @@ const Header = props => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="/" className="d-flex justify-content-center">ANA SAYFA</Nav.Link>
+                        <Nav.Link href="/" className="d-flex justify-content-center">ANASAYFA</Nav.Link>
                         <Nav.Link href="#link" className="d-flex justify-content-center">ÇİZİMLER</Nav.Link>
                         <Nav.Link href="#link" className="d-flex justify-content-center">FOTOĞRAFLAR</Nav.Link>
                         <Nav.Link href="#link" className="d-flex justify-content-center">HAKKINDA</Nav.Link>

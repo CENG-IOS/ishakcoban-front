@@ -9,7 +9,7 @@ import Header from "./components/Header";
 function App() {
     document.body.classList.add('body-background');
     return (
-        <div>
+        <div className="user-select-none">
             <Header />
             <Home></Home>
             <Footer></Footer>
