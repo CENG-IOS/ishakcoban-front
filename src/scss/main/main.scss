@@ -10,14 +10,17 @@
     @import "../components/homePageLines/verticalLineAnimation";
     /**buttons**/
     @import "../components/buttons/viewButton";
+    @import "../components/buttons/filterButton";
 
 @import "../components/footer";
 @import "../components/_navbar";
+@import "../components/_filterSection";
 
 
 
 /**pages**/
 @import "../pages/_home";
+@import "../pages/_about";
 
 
 /**themes**/

@@ -1,0 +1,78 @@
+@mixin commonInputSection() {
+  width: 360px;
+  height: 35px;
+  opacity: 0.5;
+  border-radius: 15px;
+  border: 0;
+  font-family: $OpenSans;
+  padding-left: 15px;
+}
+.filter-wrapper {
+  background-color: $white;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.filterSectionLines {
+  opacity: 1;
+  background-color: $black;
+}
+
+.filterSectionFont1 {
+  color: $green;
+  font-family: $Exo;
+  font-weight: bold;
+}
+
+.filterSectionFont1ForPhoto {
+  color: $brown;
+  font-family: $Exo;
+  font-weight: bold;
+}
+
+.filterSectionFont2 {
+  color: $black;
+  font-family: $OpenSans;
+}
+
+.filterSectionInput {
+  background-color: rgba(92, 175, 160, 0.6);
+  @include commonInputSection();
+}
+
+.filterSectionInput::placeholder {
+  color: $black;
+  opacity: 1;
+}
+
+.filterSectionInputForPhoto {
+  background-color: rgba(124, 48, 48, 0.8);
+  @include commonInputSection();
+}
+
+.filterSectionInputForPhoto::placeholder {
+  color: $white;
+  opacity: 1;
+}
+
+.smallSize {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .filterSectionInputWrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .smallSize {
+    display: block;
+  }
+  .mediumSizeAndUp {
+    display: none;
+  }
+}

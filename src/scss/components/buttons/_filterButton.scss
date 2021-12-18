@@ -1,0 +1,38 @@
+@mixin commonChecked() {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.checked {
+  @include commonChecked();
+  background: linear-gradient(
+    62deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(92, 175, 160, 1) 100%
+  );
+}
+
+.checkedForPhoto {
+  @include commonChecked();
+  background: linear-gradient(
+    62deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(124, 48, 48, 1) 100%
+  );
+}
+
+.indexContent {
+  z-index: 2;
+}
+
+.checkBoxIndex {
+  z-index: 3;
+}
+
+.checkBoxWrapper {
+  cursor: pointer;
+  height: 30px;
+}
