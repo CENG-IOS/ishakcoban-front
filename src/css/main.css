@@ -2,10 +2,10 @@
 /**components**/
 /**homePageLines**/
 .leftLine {
-  opacity: 1;
-  padding: 0.70px;
   -webkit-animation-name: leftLine;
           animation-name: leftLine;
+  opacity: 1;
+  padding: 0.70px;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: 1s;
@@ -16,13 +16,43 @@
 }
 
 .leftDot {
+  -webkit-animation-name: leftDot;
+          animation-name: leftDot;
   z-index: 2;
   width: 20px;
   height: 20px;
   background-color: #000000;
   border-radius: 100%;
-  -webkit-animation-name: leftDot;
-          animation-name: leftDot;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.leftLineForAboutPage {
+  -webkit-animation-name: leftLineForAboutPage;
+          animation-name: leftLineForAboutPage;
+  opacity: 1;
+  padding: 0.70px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.leftDotForAboutPage {
+  -webkit-animation-name: leftDotForAboutPage;
+          animation-name: leftDotForAboutPage;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 100%;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: 1s;
@@ -64,6 +94,42 @@
   }
   to {
     margin-left: 90%;
+  }
+}
+
+@-webkit-keyframes leftLineForAboutPage {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes leftLineForAboutPage {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes leftDotForAboutPage {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes leftDotForAboutPage {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
   }
 }
 

@@ -1,25 +1,42 @@
-
-.leftLine{
+@mixin lineCommonProperties(){
     opacity: 1;
     padding: 0.70px;
-    animation-name: leftLine;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     z-index:2;
-    
 }
 
-.leftDot{
+@mixin DotCommonProperties(){
     z-index:2;
     width: 20px;
     height: 20px;
     background-color: $black;
     border-radius: 100%;
-    animation-name: leftDot;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+}
+
+
+.leftLine{
+    animation-name: leftLine;
+    @include lineCommonProperties(); 
+}
+
+.leftDot{
+    animation-name: leftDot;
+    @include DotCommonProperties();
+}
+
+.leftLineForAboutPage{
+    animation-name: leftLineForAboutPage;
+    @include lineCommonProperties(); 
+}
+
+.leftDotForAboutPage{
+    animation-name: leftDotForAboutPage;
+    @include DotCommonProperties();
 }
 
 @keyframes leftLine{
@@ -40,6 +57,24 @@
     }
 }
 
+@keyframes leftLineForAboutPage{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes leftDotForAboutPage{
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+
 .rotateLeftLine{
     transform: rotate(180deg);
 }
@@ -48,3 +83,4 @@
     transform: rotate(270deg);
     margin-top: 90px;
 }
+

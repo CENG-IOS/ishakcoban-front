@@ -14,8 +14,8 @@ function App() {
     document.body.classList.add('body-background');
     return (
         <div className="user-select-none">
-            <Header></Header>
-            <Drawings></Drawings>
+        <Header></Header>
+            <About></About>
 
             <Footer></Footer>
 

@@ -21,8 +21,8 @@ export const About = () => {
       </div>
 
       <div className="container mt-5">
-        <div className="row d-flex flex-row justify-content-around">
-          <div className="col-4 d-flex flex-column justify-content-center">
+        <div className="d-flex flex-column-reverse flex-sm-row justify-content-around align-items-center">
+          <div className="col-12 col-sm-7 col-md-5 col-lg-4 align-self-sm-center justify-self-sm-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
             lectus vehicula, ultrices nisi a, commodo arcu. Suspendisse potenti.
             Praesent dictum luctus dui, quis faucibus enim. Vivamus non
@@ -32,23 +32,19 @@ export const About = () => {
             eros in diam rutrum fermentum quis eget nunc. Donec non aliquam
             diam.
           </div>
-          <div className="col-4 d-flex flex-column justify-content-center">
+          <div className="col-12 col-sm-5 col-md-5 d-flex flex-column justify-content-center align-items-center mb-4 mb-sm-0">
             <div className="square"></div>
           </div>
         </div>
       </div>
-      <div className="container bg-dark mt-5">
-        <div className="bg-success ">
-          <LeftAndRightLines></LeftAndRightLines>
-        </div>
-      </div>
-      <div className="container mt-5">
-        <div className="row d-flex flex-row justify-content-around">
+      <div className="container mt-5 ">
 
-        <div className="col-4 d-flex flex-column justify-content-center">
-            <div className="square"></div>
-          </div>
-          <div className="col-4 d-flex flex-column justify-content-center">
+        <LeftAndRightLines page='aboutPage'></LeftAndRightLines>
+
+      </div>
+      <div className="container mt-5">
+        <div className="d-flex flex-column-reverse flex-sm-row-reverse justify-content-around align-items-center">
+          <div className="col-12 col-sm-7 col-md-5 col-lg-4 align-self-sm-center justify-self-sm-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
             lectus vehicula, ultrices nisi a, commodo arcu. Suspendisse potenti.
             Praesent dictum luctus dui, quis faucibus enim. Vivamus non
@@ -58,18 +54,19 @@ export const About = () => {
             eros in diam rutrum fermentum quis eget nunc. Donec non aliquam
             diam.
           </div>
-          
+          <div className="col-12 col-sm-5 col-md-5 d-flex flex-column justify-content-center align-items-center mb-4 mb-sm-0">
+            <div className="square"></div>
+          </div>
         </div>
       </div>
       <div className="container mt-5">
-        <div className="rotateLeftLine">
-          <LeftAndRightLines></LeftAndRightLines>
-        </div>
+        <div className="rotateLeftLine"><LeftAndRightLines page='aboutPage'></LeftAndRightLines></div>
+
       </div>
 
       <div className="container mt-5 mb-5">
-        <div className="row d-flex flex-row justify-content-around">
-          <div className="col-4 d-flex flex-column justify-content-center">
+        <div className="d-flex flex-column-reverse flex-sm-row justify-content-around align-items-center">
+          <div className="col-12 col-sm-7 col-md-5 col-lg-4 align-self-sm-center justify-self-sm-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
             lectus vehicula, ultrices nisi a, commodo arcu. Suspendisse potenti.
             Praesent dictum luctus dui, quis faucibus enim. Vivamus non
@@ -79,7 +76,7 @@ export const About = () => {
             eros in diam rutrum fermentum quis eget nunc. Donec non aliquam
             diam.
           </div>
-          <div className="col-4 d-flex flex-column justify-content-center">
+          <div className="col-12 col-sm-5 col-md-5 d-flex flex-column justify-content-center align-items-center mb-4 mb-sm-0">
             <div className="square"></div>
           </div>
         </div>
