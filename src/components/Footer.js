@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import instagram from "../images/instagram.png";
 import devianart from "../images/devianart.png";
 import tiktok from "../images/tiktok.png";
 import linkedin from "../images/linkedin.png";
+import Modal from 'react-bootstrap/Modal';
 export const Footer = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="container-fluid bggradient ">
       <div className="row ">
@@ -54,9 +60,40 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="d-flex justify-content-center align-items-center mt-2 fw-bold">
-              İLETİŞİM
+            <div onClick={handleShow} className="d-flex justify-content-center align-items-center mt-2 fw-bold ">
+              <span className="contact">İLETİŞİM</span>
+
             </div>
+            <Modal show={show} onHide={handleClose} centered size="lg">
+              <Modal.Header closeButton>
+
+              </Modal.Header>
+              <Modal.Body className=" d-flex justify-content-center align-items-center" >
+
+                <div className="col-11">
+                  <div>
+                    <input className="contact-inputs" type="text" id="Name" name="Name" placeholder="İsim" />
+                  </div>
+                  <div className="mt-3">
+                    <input className="contact-inputs" type="text" id="surName" name="surName" placeholder="Soyisim" />
+                  </div>
+                  <div className="mt-3">
+                    <input className="contact-inputs" type="email" id="email" name="email" placeholder="Mail Adresin" />
+                  </div>
+                  <div className="mt-3">
+                    <textarea className="contact-inputs w-100" name="paragraph_text" cols="50" rows="5" placeholder="Açıklama"></textarea>
+                  </div>
+                  <div className="d-flex justify-content-center align-items-center mt-5 mb-3  "><button className="contact-send-button">GÖNDER</button></div>
+                </div>
+
+
+              </Modal.Body>
+
+
+            </Modal>
+
+
+
           </div>
         </div>
       </div>

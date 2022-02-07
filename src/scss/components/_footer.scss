@@ -27,3 +27,34 @@
     padding-bottom: 5%;
   }
 }
+
+.contact-inputs{
+ 
+  background-color: #EBE3E3;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px;
+  width: 50%;
+  padding-left: 1em
+
+}
+
+.contact{
+  text-decoration: underline;
+}
+
+.contact:hover{
+  cursor: pointer;
+  color: rgb(50, 86, 128);
+}
+
+.contact-send-button{
+  background-color: #965252;
+  color: #fff;
+  font-family: $Roboto;
+  width: 50%;
+  border-radius: 15px;
+  padding: 5px;
+  border: 0;
+
+}

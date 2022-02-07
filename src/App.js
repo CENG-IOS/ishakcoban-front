@@ -9,13 +9,27 @@ import { FilterSection } from "./components/FilterSection";
 import { FilterButton } from "./components/buttons/FilterButton";
 import { Drawings } from "./pages/Drawings";
 import { About } from "./pages/About";
+import { Grid } from "./components/Grid";
+
 
 function App() {
     document.body.classList.add('body-background');
     return (
         <div className="user-select-none">
         <Header></Header>
-            <About></About>
+        <Drawings></Drawings>
+       {/* <div className="container">
+        <div className="row mt-5 mb-5 bg-danger ">
+        <div className="col-4  d-flex justify-content-center"><Grid></Grid></div>
+        <div className="col-4 d-flex justify-content-center"><Grid></Grid></div>
+        <div className="col-4 d-flex justify-content-center"><Grid></Grid></div>
+        
+        </div>
+      
+   
+    </div>*/}
+          
+   
 
             <Footer></Footer>
 

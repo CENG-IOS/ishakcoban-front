@@ -452,6 +452,34 @@
   }
 }
 
+.contact-inputs {
+  background-color: #EBE3E3;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px;
+  width: 50%;
+  padding-left: 1em;
+}
+
+.contact {
+  text-decoration: underline;
+}
+
+.contact:hover {
+  cursor: pointer;
+  color: #325680;
+}
+
+.contact-send-button {
+  background-color: #965252;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+  border-radius: 15px;
+  padding: 5px;
+  border: 0;
+}
+
 .main-logo {
   font-family: "Kaushan Script", cursive;
   font-size: 2rem;
@@ -611,6 +639,19 @@
 .staticSize {
   height: 400px;
   padding-top: 145px;
+}
+
+/***************************************/
+.grid-system {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 50px;
+  background-color: chartreuse;
+}
+
+.asd {
+  width: 100%;
+  vertical-align: top;
 }
 
 .aboutFont {
