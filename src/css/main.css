@@ -453,12 +453,28 @@
 }
 
 .contact-inputs {
-  background-color: #EBE3E3;
+  background-color: #ebe3e3;
   border: 0;
   border-radius: 15px;
   padding: 5px;
   width: 50%;
   padding-left: 1em;
+}
+
+.contact-inputs::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-inputs:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-inputs::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-inputs::placeholder {
+  font-family: "Roboto", sans-serif;
 }
 
 .contact {
@@ -478,6 +494,39 @@
   border-radius: 15px;
   padding: 5px;
   border: 0;
+}
+
+/**/
+.img-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+  padding: 100px;
+}
+
+.each-img {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 769px) {
+  .img-wrapper {
+    grid-gap: 6px;
+    padding: 0px;
+  }
+}
+
+.each-img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .main-logo {
