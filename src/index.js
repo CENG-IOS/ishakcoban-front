@@ -5,11 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./css/main.css";
+import { Provider } from "react-redux";
+import store from "./store/store"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}><App /></Provider>,
   document.getElementById('root')
 );
 

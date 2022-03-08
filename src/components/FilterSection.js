@@ -1,17 +1,19 @@
-import React from "react";
-import { ForPractise } from "../pages/ForPractise";
+import React,{useState,useEffect} from "react";
 import { FilterButton } from "./buttons/FilterButton";
 
 export const FilterSection = (props) => {
+  const [value, setValue] = useState(null)
+
+
+
+
+  
   return (
-    <div className="container-fluid p-0">
-      <div className="filter-wrapper" >
+    <div className="container p-0">
+      <div className="filter-wrapper container" >
         <div className="container ">
           <div className="filterSectionInputWrapper" >
-            <input
-              className={props.filterType == "drawing" ? "filterSectionInput mt-5" : "filterSectionInputForPhoto mt-5"}
-              placeholder={props.filterType == "drawing" ? "Çizim ara..." : "Fotoğraf ara..."}
-            ></input>
+            {props.children}
           </div>
 
           <div className="mediumSizeAndUp">
@@ -33,6 +35,11 @@ export const FilterSection = (props) => {
                 <div className="col-3 col-md-2 mt-3">
                   <FilterButton buttonType={props.filterType == "drawing" ? "drawingFilter" : null}></FilterButton>
                 </div>
+                <div className="col-3 col-md-2 mt-3">
+                  <FilterButton buttonType={props.filterType == "drawing" ? "drawingFilter" : null}></FilterButton>
+                </div>
+                
+                
               </div>
             </div>
 
@@ -113,6 +120,13 @@ export const FilterSection = (props) => {
                   <div className="col-8 position-relative mt-3">
                     <div><FilterButton buttonType={props.filterType == "drawing" ? 'drawingFilter' : null}></FilterButton></div>
                   </div>
+                  <div className="col-8 position-relative mt-3">
+                    <div><FilterButton buttonType={props.filterType == "drawing" ? 'drawingFilter' : null}></FilterButton></div>
+                  </div>
+                  <div className="col-8 position-relative mt-3">
+                    <div><FilterButton buttonType={props.filterType == "drawing" ? 'drawingFilter' : null}></FilterButton></div>
+                  </div>
+                  
                 </div> : null
                 }
                 

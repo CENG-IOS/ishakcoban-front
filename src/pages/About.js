@@ -1,10 +1,8 @@
 import React from "react";
-import { ViewButton } from "../components/buttons/homePageButtons/ViewButton";
 import { LeftAndRightLines } from "../components/homePagelines/LeftAndRightLines";
-import { Logo } from "../components/homePagelines/Logo";
-import { VerticalLine } from "../components/homePagelines/VerticalLine";
-export const About = () => {
-  return (
+import Logo  from "../components/homePagelines/Logo";
+const About = () => {
+   return (
     <div className="container-fluid user-select-none mt-5 aboutFont">
       <div className="container">
         <div className="row d-flex flex-row justify-content-center">
@@ -84,3 +82,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

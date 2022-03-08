@@ -1,11 +1,20 @@
-import React, { useEffect } from "react";
-import drawingP from "../../../images/viviChan.png";
-import drawingP2 from "../../../images/photoSample.png";
-import { getByTitle } from "@testing-library/dom";
-export const ViewButton = (props) => {
+import React,{lazy}from "react";
+import { useNavigate } from "react-router-dom";
+import drawingP from '../../../assets/images/viviChan.png';
+import drawingP2 from '../../../assets/images/photoSample.png';
+const ViewButton = (props) => {
+  const navigate = useNavigate();
+  const clickViewButton = ()=>{
+    if(props.title1 == "ÇİZİMLERE"){
+      navigate("/Drawings");
+    }else{
+      navigate("/Photos");
+    }
+  }
   return (
     <div className="position-relative viewButtonAnimation">
       <button
+        onClick={clickViewButton}
         id="vB"
         className="viewButton p-0 m-0 border-0 position-relative d-flex justify-content-center align-items-center bgTransParent"
       >
@@ -13,7 +22,7 @@ export const ViewButton = (props) => {
           <div>{props.title1}</div>
           <div>{props.title2}</div>
         </div>
-        <img
+        <img 
           className={
             props.title1 == "ÇİZİMLERE" ? "drawingPhoto" : "photoSample"
           }
@@ -23,3 +32,5 @@ export const ViewButton = (props) => {
     </div>
   );
 };
+
+export default ViewButton;

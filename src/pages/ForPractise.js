@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { LeftAndRightLines } from "../components/homePagelines/LeftAndRightLines";
-import { Logo } from "../components/homePagelines/Logo";
-import { VerticalLine } from "../components/homePagelines/VerticalLine";
+import React, { useEffect} from "react";
+
 
 export const ForPractise = (props) => {
     const [checked, setChecked] = React.useState(true);

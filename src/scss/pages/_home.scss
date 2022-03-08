@@ -30,3 +30,41 @@
   width: 100%;
   vertical-align: top;
 }
+
+.myCircle{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.animCircle{
+  animation-name: rrr;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes rrr{
+  from{
+
+  }
+  to{
+    margin-left: 550px;
+
+  }
+}
+
+.animCircle2{
+  margin-left: 550px;
+  animation-name: bbb;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes bbb{
+  from{
+
+  }
+  to{
+    margin-left: 0px;
+
+  }
+}

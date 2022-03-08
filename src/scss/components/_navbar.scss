@@ -21,3 +21,34 @@
         color: $black !important;
     }
 }
+
+.links{
+    text-decoration: none;
+    color: black;
+    
+}
+.links:hover{
+    color: $brown
+
+}
+
+@media screen and (max-width: 990px) {
+    .links-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .links{
+        width: 100%;
+
+    }
+    .links:hover{
+        
+    background-color: $brown;
+    color: #fff;
+    }
+  }
+
+.brand{
+    cursor: pointer;
+}

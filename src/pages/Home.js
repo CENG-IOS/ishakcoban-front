@@ -1,10 +1,10 @@
 import React from "react";
-import { ViewButton } from "../components/buttons/homePageButtons/ViewButton";
+import  ViewButton  from "../components/buttons/homePageButtons/ViewButton";
 import { LeftAndRightLines } from "../components/homePagelines/LeftAndRightLines";
-import { Logo } from "../components/homePagelines/Logo";
+import  Logo  from "../components/homePagelines/Logo";
 import { VerticalLine } from "../components/homePagelines/VerticalLine";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="container-fluid user-select-none mt-5">
       <div className="container">
@@ -57,3 +57,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

@@ -1,0 +1,41 @@
+.img-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+  padding: 100px;
+}
+
+.img-content-wrapper {
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.each-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  z-index: 5;
+}
+
+@media screen and (max-width: 769px) {
+  .img-wrapper {
+    grid-gap: 6px;
+    padding: 0px;
+  }
+}
+
+.not-found{
+  font-family: $Roboto;
+  font-weight: bolder;
+  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);}

@@ -1,0 +1,87 @@
+@mixin common1() {
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin common2() {
+  width: 0;
+  height: 0;
+  transition: all 0.6s;
+}
+
+#img-canvas-wrapper {
+  @include common1();
+}
+
+#img-canvas-shapes-wrapper {
+  z-index: 3;
+  @include common1();
+}
+
+.img-canvas-shapes-1 {
+  @include common1();
+}
+
+.img-canvas-shapes-2 {
+  @include common1();
+}
+
+.triangle-1 {
+  @include common2();
+  border-bottom: 100vw solid #14c271ad;
+  border-left: 70vh solid transparent;
+  transform: rotate(-20deg);
+  transform-origin: top right;
+}
+
+.triangle-2 {
+  @include common2();
+  border-bottom: 70vh solid #0e9aecaf;
+  border-left: 100vw solid transparent;
+  transform: rotate(20deg);
+  transform-origin: bottom left;
+}
+
+#img-canvas-blur-wrapper {
+  z-index: 1;
+  @include common1();
+  transition: all 0.6s;
+}
+
+#img-canvas-text-wrapper {
+  z-index: 2;
+  @include common1();
+  transition: all 1s;
+}
+
+.img-canvas-text {
+  margin-top: -60px;
+  font-family: $Roboto;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #fff;
+  transition: all 0.6s;
+}
+
+#img-canvas-wrapper:hover
+  > #img-canvas-shapes-wrapper
+  > .img-canvas-shapes-1
+  > .triangle-1 {
+  transform: rotate(0deg);
+}
+
+#img-canvas-wrapper:hover :first-child :last-child :first-child {
+  transform: rotate(0deg);
+}
+
+#img-canvas-wrapper:hover :last-child :first-child {
+  margin-top: 6vw;
+}
+
+#img-canvas-wrapper:hover #img-canvas-text-wrapper {
+  backdrop-filter: blur(3px);
+}

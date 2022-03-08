@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from "react";
-import instagram from "../images/instagram.png";
-import devianart from "../images/devianart.png";
-import tiktok from "../images/tiktok.png";
-import linkedin from "../images/linkedin.png";
-import Modal from 'react-bootstrap/Modal';
-export const Footer = () => {
+import React, { useState } from "react";
+import instagram from "../assets/images/instagram.png";
+import devianart from "../assets/images/devianart.png";
+import tiktok from "../assets/images/tiktok.png";
+import linkedin from "../assets/images/linkedin.png";
+import { PopUp } from '../components/PopUp';
+ const Footer = () => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(!show);
 
   return (
-    <div className="container-fluid bggradient ">
+    <div className="container-fluid Bg-gradient">
       <div className="row ">
-        <div className=" pt-5 pb-5 smallScreen">
-          <div className="col-8 col-md-8 col-lg-8 col-xl-8 fontSize">
+        <div className=" pt-5 pb-5 small-Screen">
+          <div className="col-8 col-md-8 col-lg-8 col-xl-8 font-Size">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -26,13 +25,13 @@ export const Footer = () => {
             PageMaker including versions of Lorem Ipsum.
           </div>
           <div className="col-2 col-md-2 col-lg-2 col-xl-2 d-flex flex-column justify-content-center">
-            <div className="d-flex justify-content-center align-items-center w-50 align-self-center iconAnimation">
+            <div className="d-flex justify-content-center align-items-center w-50 align-self-center">
               <div className="d-flex justify-content-center align-items-center me-4">
                 <a
                   href="https://www.instagram.com/ishakcbn/?hl=tr"
                   target="_blank"
                 >
-                  <img className="imageSize" src={instagram}></img>
+                  <img className="image-Size" src={instagram}></img>
                 </a>
               </div>
               <div className="d-flex justify-content-center align-items-center">
@@ -40,15 +39,15 @@ export const Footer = () => {
                   href="https://www.linkedin.com/in/ishak-%C3%A7oban-b8b027227/"
                   target="_blank"
                 >
-                  <img className="imageSize" src={linkedin}></img>
+                  <img className="image-Size" src={linkedin}></img>
                 </a>
               </div>
             </div>
 
-            <div className="d-flex justify-content-center align-items-center align-self-center mt-4 iconAnimation">
+            <div className="d-flex justify-content-center align-items-center align-self-center mt-4">
               <div className="d-flex justify-content-center align-items-center me-4">
                 <a href="https://www.deviantart.com/ishakcbn" target="_blank">
-                  <img img className="imageSize" src={devianart}></img>
+                  <img img className="image-Size" src={devianart}></img>
                 </a>
               </div>
               <div className="d-flex justify-content-center align-items-center">
@@ -56,7 +55,7 @@ export const Footer = () => {
                   href="https://www.tiktok.com/@ishakcbn?lang=en"
                   target="_blank"
                 >
-                  <img img className="imageSize" src={tiktok}></img>
+                  <img img className="image-Size" src={tiktok}></img>
                 </a>
               </div>
             </div>
@@ -64,13 +63,19 @@ export const Footer = () => {
               <span className="contact">İLETİŞİM</span>
 
             </div>
-            <Modal show={show} onHide={handleClose} centered size="lg">
-              <Modal.Header closeButton>
 
-              </Modal.Header>
-              <Modal.Body className=" d-flex justify-content-center align-items-center" >
+            {show && <PopUp>
 
-                <div className="col-11">
+              {show && <div onClick={handleShow} className='position-absolute popup-bg'> </div>}
+              {show && <div className='position-fixed d-flex justify-content-end align-items-center mmmmmm'>
+                <div onClick={handleShow} className='position-relative popup-cross d-flex justify-content-center align-items-center'>
+                  <div className='position-absolute line1'></div>
+                  <div className='position-absolute line2'></div>
+                </div></div>}
+              {show && <div className='popup position-fixed sss'>
+      
+                <div className='col-12 d-flex flex-column p-5 justify-content-center align-items-stretch bg-light popupContent'>
+
                   <div>
                     <input className="contact-inputs" type="text" id="Name" name="Name" placeholder="İsim" />
                   </div>
@@ -86,12 +91,8 @@ export const Footer = () => {
                   <div className="d-flex justify-content-center align-items-center mt-5 mb-3  "><button className="contact-send-button">GÖNDER</button></div>
                 </div>
 
-
-              </Modal.Body>
-
-
-            </Modal>
-
+              </div>}
+            </PopUp>}
 
 
           </div>
@@ -100,3 +101,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+export default Footer;

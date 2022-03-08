@@ -1,0 +1,146 @@
+.bottom-circles {
+  top: 0;
+  z-index: 21;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
+}
+
+.proVersionContent {
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #ac6d2a 0%,#e6683c 25%,#b91931 50%,#8d1d4a 75%,#bc1888 100%); 
+  transform: rotate(5deg);
+}
+
+.animationProVersion{
+    animation-duration: 0.7s;
+    animation-name: proVersionContent1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+   
+}
+.animationProVersion11{
+    animation-duration: 0.9s;
+    animation-name: proVersionContent11;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+
+}
+
+.proVersionContent1 {
+    bottom: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    background: linear-gradient(45deg, #ac6d2a 0%,#e6683c 25%,#b91931 50%,#8d1d4a 75%,#bc1888 100%); 
+    transform: rotate(-5deg);
+  }
+  .animationProVersion1{
+      animation-duration: 0.8s;
+      animation-name: proVersionContent2;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+  }
+  .animationProVersion22{
+    animation-duration: 0.8s;
+    animation-name: proVersionContent22;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+  .proVersionContent2 {
+    bottom: 0;
+    width: 280px;
+    height: 280px;
+    border-radius:100%;
+    background: linear-gradient(45deg, #ac6d2a 0%,#e6683c 25%,#b91931 50%,#8d1d4a 75%,#bc1888 100%); 
+    transform: rotate(-15deg);
+  
+  }
+  .animationProVersion2{
+      animation-duration: 0.9s;
+      animation-name: proVersionContent3;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+      
+  }
+
+  .animationProVersion33{
+    animation-duration: 0.7s;
+    animation-name: proVersionContent33;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes proVersionContent1 {
+  from {
+    bottom: -400px;
+  }
+  to {
+    bottom: -200px;
+  }
+}
+
+
+@keyframes proVersionContent11 {
+    from {
+        
+        bottom: -200px;
+      }
+      to {
+        bottom: -400px;
+      }
+  }
+@keyframes proVersionContent2 {
+    from {
+        bottom: -340px;
+      }
+      to {
+        bottom: -170px;
+      }
+  }
+  
+  @keyframes proVersionContent22 {
+    from {
+        
+        bottom: -170px;
+      }
+      to {
+        bottom: -340px;
+      }
+  }
+  @keyframes proVersionContent3 {
+    from {
+      bottom:-280px;
+    }
+    to {
+      bottom: -140px;
+    }
+  }
+  @keyframes proVersionContent33 {
+    from {
+        
+        bottom: -140px;
+      }
+      to {
+        bottom:-280px;
+        
+      }
+  }
+
+  .contentProVersion{
+    bottom: 0;
+    width: 400px;
+    height: 200px;
+    z-index: 100;
+    font-family: $Roboto;
+    color: #fff;
+   
+  }
+  
