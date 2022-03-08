@@ -4,7 +4,11 @@ const Photos = () => {
 
     return (
         <div className='mt-5 mb-5'>
-            <FilterSection></FilterSection>
+            <FilterSection> <input
+            className={"filterSectionInputForPhoto mt-5" }
+            placeholder={"Çizim ara..."}
+            /*onChange={inputHandler}*/
+          ></input></FilterSection>
 
         </div>
     )

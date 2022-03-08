@@ -134,7 +134,7 @@ const Drawings = () => {
 
   }, [inputValue])
   return (
-    <div >
+    <div className='mt-5'>
 
       <FilterSection filterType='drawing'>
       <input
